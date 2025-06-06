@@ -29,7 +29,6 @@ export default function Home() {
         <meta name="twitter:description" content="丹波篠山の地域に根ざした暮らしの百貨店。" />
         <meta name="twitter:image" content="https://okumo-hyakka.vercel.app/images/hero.png" /> */}
 
-
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="min-h-screen bg-gray-50 text-gray-800">
