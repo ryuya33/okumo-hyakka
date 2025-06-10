@@ -32,39 +32,13 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="min-h-screen bg-gray-50 text-gray-800">
-        {/* ヘッダー */}
-        <header className="p-4 bg-white shadow">
-          <div className="container mx-auto flex justify-between items-center">
-            <h1 className="text-3xl font-bold">くらしの百貨おくも</h1>
-            <nav>
-              <ul className="flex gap-4">
-                <li>
-                  <a href="#about" className="hover:underline">
-                    お店について
-                  </a>
-                </li>
-                <li>
-                  <a href="#products" className="hover:underline">
-                    商品一覧
-                  </a>
-                </li>
-                <li>
-                  <a href="#contact" className="hover:underline">
-                    お問い合わせ
-                  </a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-        </header>
-
         {/* ヒーローセクション */}
         <section
           className="bg-cover bg-center h-[75vh] relative"
           style={{ backgroundImage: "url('/images/hero.png')" }}
         >
           <div className="relative z-10 h-full flex items-end">
-            <div className="m-10 text-white max-w-xl text-left">
+            <div className="m-10 text-white max-w-xl text-left fade-slide-in">
               <h2 className="text-3xl md:text-3xl font-semibold tracking-wide leading-relaxed drop-shadow-[0_4px_8px_rgba(0,0,0,0.6)]">
                 <span className="block sm:inline">日常に寄り添う、</span>
                 <span className="block sm:inline sm:ml-0 ml-6">小さなこだわり。</span>
@@ -118,7 +92,7 @@ export default function Home() {
             <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 gap-8">
 
               {/* 売り場1 */}
-              <div className="bg-white p-4 rounded shadow flex justify-center items-center flex-col">
+              <div className="bg-white p-4 rounded shadow transition-transform transform hover:-translate-y-1 hover:shadow-lg flex justify-center items-center flex-col">
                 <Image
                   src="/images/product1.JPG"
                   alt="くらしの百貨おくもの店内（食品等）"
@@ -131,7 +105,7 @@ export default function Home() {
               </div>
 
               {/* 売り場2 */}
-              <div className="bg-white p-4 rounded shadow flex justify-center items-center flex-col">
+              <div className="bg-white p-4 rounded shadow transition-transform transform hover:-translate-y-1 hover:shadow-lg flex justify-center items-center flex-col">
                 <Image
                   src="/images/product2.JPG"
                   alt="商品2"
@@ -144,7 +118,7 @@ export default function Home() {
               </div>
 
               {/* 売り場3 */}
-              <div className="bg-white p-4 rounded shadow flex justify-center items-center flex-col">
+              <div className="bg-white p-4 rounded shadow transition-transform transform hover:-translate-y-1 hover:shadow-lg flex justify-center items-center flex-col">
                 <Image
                   src="/images/product3.JPG"
                   alt="商品3"
@@ -168,21 +142,12 @@ export default function Home() {
           <div className="flex justify-center">
             <a
               href="mailto:info@okumo.jp"
-              className="bg-blue-600 hover:bg-blue-700 text-white py-2 px-6 rounded uppercase tracking-wider font-semibold"
+              className="bg-blue-600 hover:bg-blue-700 text-white py-2 px-6 rounded uppercase tracking-wider font-semibold transition-transform transform hover:scale-105"
             >
               メールでお問い合わせ
             </a>
           </div>
         </section>
-
-        {/* フッター */}
-        <footer className="bg-gray-800 text-white py-6">
-          <div className="container mx-auto text-center">
-            <p>
-              &copy; {new Date().getFullYear()} くらしの百貨おくも. All rights reserved.
-            </p>
-          </div>
-        </footer>
       </main>
     </>
   );
