@@ -1,36 +1,10 @@
 import Image from "next/image";
-import Head from "next/head";
+
+import AccessMap from '@/components/AccessMap';
 
 export default function Home() {
   return (
     <>
-      <Head>
-        <title>くらしの百貨おくも｜丹波篠山の小さな百貨店</title>
-        <meta
-          name="description"
-          content="丹波篠山市の80代夫婦が営む地域密着の小売店。飲料・食品・日用品・衣料・農業用品など幅広く取り扱っています。"
-        />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-        {/* SNSでシェアされたときのタイトルや説明 */}
-        <meta property="og:title" content="くらしの百貨おくも｜丹波篠山の小さな百貨店" />
-        <meta
-          property="og:description"
-          content="丹波篠山の地域に根ざした暮らしの百貨店。"
-        />
-        <meta property="og:image" content="https://okumo-hyakka.vercel.app/images/hero.png" />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://okumo-hyakka.vercel.app/" />
-
-        {/* SNS（Twitter）でシェアされたときのタイトルや説明 */}
-        {/* <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@" />
-        <meta name="twitter:title" content="くらしの百貨おくも｜丹波篠山の小さな百貨店" />
-        <meta name="twitter:description" content="丹波篠山の地域に根ざした暮らしの百貨店。" />
-        <meta name="twitter:image" content="https://okumo-hyakka.vercel.app/images/hero.png" /> */}
-
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
       <main className="min-h-screen bg-gray-50 text-gray-800">
         {/* ヒーローセクション */}
         <section
@@ -132,6 +106,8 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        <AccessMap />
 
         {/* お問い合わせセクション */}
         <section id="contact" className="py-12 container mx-auto">
